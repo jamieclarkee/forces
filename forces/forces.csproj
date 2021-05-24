@@ -83,5 +83,12 @@
   <ItemGroup>
     <None Include="Resources\Resolve Force.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="cuboid.jpg" />
+    <None Include="Resources\download cone.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\Cuboid_simple.svg.png" />
+    <None Include="Resources\Cuboid.bmp" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

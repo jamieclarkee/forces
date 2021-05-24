@@ -54,5 +54,41 @@ namespace forces
         {
 
         }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //use try-catch to avoid input errors
+            try
+            {
+                //read values for force and angle from textboxes
+                double Force = double.Parse(textBox1.Text);
+                double Force = double.Parse(textBox2.Text);
+                //calculate Fx and Fy using equations Fx = Fcos and Fy = Fsin
+                double Fx = Force * cos(Angle);
+                double Fx = Force * sin(Angle);
+                //Output solutionsto label1 and label2
+                label1.Text = "Fx = " + Fx;
+                label2.Text = "Fy = " + Fy;
+            }
+            catch
+            {
+                MessageBox.Show("Error on input");
+            }
+        }
     }
 }
