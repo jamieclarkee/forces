@@ -76,18 +76,106 @@ namespace forces
             try
             {
                 //read values for force and angle from textboxes
-                double Force = double.Parse(textBox1.Text);
-                double Force = double.Parse(textBox2.Text);
-                //calculate Fx and Fy using equations Fx = Fcos and Fy = Fsin
-                double Fx = Force * cos(Angle);
-                double Fx = Force * sin(Angle);
-                //Output solutionsto label1 and label2
-                label1.Text = "Fx = " + Fx;
-                label2.Text = "Fy = " + Fy;
+                double length = double.Parse(textBox1.Text);
+                double width = double.Parse(textBox2.Text);
+                double height = double.Parse(textBox3.Text);
+                //calculate of area and volume
+                double area = 2.0 * ((length = width) + (length = height) + (width * height));
+                double volume = length * width * height;
+                // put volumes in labels
+                label1.Text = "Surface area = " + area;
+                label2.Text = "Volume = " + volume;
             }
             catch
             {
-                MessageBox.Show("Error on input");
+                // show error message on screen if fail
+                MessageBox.Show("Error! Error!! Error!!!");
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Reads what text is in the force and angle textboxes
+                double Height = double.Parse(textBox2.Text);
+                //
+                double Volume = Height * Height * Height;
+                double SurfaceArea = 2 * (Height * Height + Height * Height + Height * Height);
+                //
+                label4.Text = "Volume = " + Volume;
+                label5.Text = "Surface Area =" + SurfaceArea;
+            }
+            catch
+            {
+                MessageBox.Show("your numbers are very wrong, check again");
+
+            }
+
+
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+
+
+
+
+            try
+            {
+                double CylinderRadius = double.Parse(textBox8.Text);
+                double CylinderHeight = double.Parse(textBox9.Text);
+                double CylinderSurfaceArea = 2 * Math.PI * CylinderRadius * CylinderHeight + 2 * Math.PI * (CylinderRadius * CylinderRadius);
+                double CylinderVolume = Math.PI * (CylinderRadius * CylinderRadius) * CylinderHeight;
+                label5.Text = "Surface Area =" + CylinderSurfaceArea;
+                label6.Text = "Volume =" + CylinderVolume;
+
+
+
+            }
+            catch
+            {
+
+            }
+    }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double CylinderRadius = double.Parse(textBox8.Text);
+                double CylinderHeight = double.Parse(textBox9.Text);
+                double CylinderSurfaceArea = 2 * Math.PI * CylinderRadius * CylinderHeight + 2 * Math.PI * (CylinderRadius * CylinderRadius);
+                double CylinderVolume = Math.PI * (CylinderRadius * CylinderRadius) * CylinderHeight;
+                label5.Text = "Surface Area =" + CylinderSurfaceArea;
+                label6.Text = "Volume =" + CylinderVolume;
+
+
+
+            }
+            catch
+            {
+
             }
         }
     }

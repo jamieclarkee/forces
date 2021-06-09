@@ -81,10 +81,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cylinder44444" />
     <None Include="Resources\Resolve Force.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="cuboid.jpg" />
+    <None Include="Resources\Cube1.png" />
     <None Include="Resources\download cone.png" />
     <None Include="Resources\download.png" />
     <None Include="Resources\Cuboid_simple.svg.png" />

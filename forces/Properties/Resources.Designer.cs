@@ -63,6 +63,16 @@ namespace forces.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cube1 {
+            get {
+                object obj = ResourceManager.GetObject("Cube1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cuboid {
             get {
                 object obj = ResourceManager.GetObject("Cuboid", resourceCulture);
@@ -76,6 +86,16 @@ namespace forces.Properties {
         internal static System.Drawing.Bitmap Cuboid_simple_svg {
             get {
                 object obj = ResourceManager.GetObject("Cuboid_simple.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cylinder44444 {
+            get {
+                object obj = ResourceManager.GetObject("cylinder44444", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
